@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costumer Review</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <header class="top-section">
+            <h1>The Elite Collection</h1>
+            <p>Duniya ke behtareen items, sirf aapke liye. Har product ke saath real customer feedback dekhein.</p>
+        </header>
+
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="chalaoFilter('all', this)">Sabhi Products</button>
+            <button class="tab-btn" onclick="chalaoFilter('home', this)">Home Decor</button>
+        </div>
+
+        <div class="products-grid">
+            
+            <div class="p-card" data-category="home">
+                <div class="img"><img src="download (3).jpg" alt=""></div>
+                <div class="p-details">
+                    <h2 class="p-title">Neon Study</h2>
+                    <button class="show-review-btn" onclick="toggleKaro(1)">Check Review</button>
+                    <div class="review-drawer" id="box-1">
+                        <span class="reviewer-name">Isha Gupta ne kaha:</span>
+                        <p class="review-text">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, totam.."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-card" data-category="gadget">
+                <div class="img-area"><img src="download.jpg" alt="Watch"></div>
+                <div class="p-details">
+                    <h2 class="p-title">Midnight Smartwatch</h2>
+                    <button class="show-review-btn" onclick="toggleKaro(2)">Check Review</button>
+                    <div class="review-drawer" id="box-2">
+                        <span class="reviewer-name">Fatima Noor ne kaha:</span>
+                        <p class="review-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, perspiciatis!."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-card" data-category="home">
+                <div class="img-area"><img src="download (1).jpg" alt="Chair"></div>
+                <div class="p-details">
+                    <h2 class="p-title">Velvet Armchair</h2>
+                    <button class="show-review-btn" onclick="toggleKaro(3)">Check Review</button>
+                    <div class="review-drawer" id="box-3">
+                        <span class="reviewer-name">Amit Sharma ne kaha:</span>
+                        <p class="review-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, fugiat!."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-card" data-category="gadget">
+                <div class="img-area"><img src="download (2).jpg" alt="Headphones"></div>
+                <div class="p-details">
+                    <h2 class="p-title">Pro Audio Wireless</h2>
+                    <button class="show-review-btn" onclick="toggleKaro(4)">Check Review</button>
+                    <div class="review-drawer" id="box-4">
+                        <span class="reviewer-name">Adnan Khan ne kaha:</span>
+                        <p class="review-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, aut."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-card" data-category="home">
+                <div class="img-area"><img src="download (3).jpg" alt="Vase"></div>
+                <div class="p-details">
+                    <h2 class="p-title">Modern Art Vase</h2>
+                    <button class="show-review-btn" onclick="toggleKaro(5)">Check Review</button>
+                    <div class="review-drawer" id="box-5">
+                        <span class="reviewer-name">Sana Malik ne kaha:</span>
+                        <p class="review-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, aut."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-card" data-category="home">
+                <div class="img-area"><img src="download (4).jpg" alt="Bedset"></div>
+                <div class="p-details">
+                    <h2 class="p-title">Silk Finish Bedset</h2>
+                    <button class="show-review-btn" onclick="toggleKaro(6)">Check Review</button>
+                    <div class="review-drawer" id="box-6">
+                        <span class="reviewer-name">Rahul ne kaha:</span>
+                        <p class="review-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, aut."</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Designed By Nehal Atiq &copy; 2026</p>
+    </footer>
+    <script src="add.js"></script>
+</body>
+</html>
